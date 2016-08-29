@@ -1,0 +1,32 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "comma-dangle": [2, "only-multiline"],
+    "no-empty": [0, {
+      "allowEmptyCatch": true
+    }],
+    "eqeqeq": [2, "allow-null"],
+    "no-console": [0],
+    "valid-jsdoc": [1, {
+      "requireReturn": false,
+      "requireParamDescription": false,
+      "requireReturnDescription": false,
+      "requireReturnType": false
+    }]
+  }
+}
